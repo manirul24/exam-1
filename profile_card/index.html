@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .profile-card {
+            width: 300px;
+            height: 400px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-card h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .profile-card p {
+            color: #777;
+            font-size: 16px;
+            font-weight: bold;
+            margin:7px 0;
+        }
+
+        .profile-card .contact-info {
+            margin-top: 20px;
+        }
+
+        .profile-card .contact-info p {
+            margin: 5px 0;
+        }
+
+        .profile-card .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .profile-card .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .circular--square { border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%; }
+        .contine{
+            padding: 50px;
+            width: 150px;
+        }
+
+
+        .button {
+  background-color: #000;
+  border: none;
+  color: White;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+   border: #000 solid 1px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #000;
+  border: #000 solid 1px;
+}
+h1{ font-size: 50px; font-family: Arial, Helvetica, sans-serif;}
+h5{font-size: 20px; font-family: 'Times New Roman', Times, serif;}
+
+ .divTable
+    {
+        display:  table;
+        width:auto;
+        background-color:#fff;
+       
+        border-spacing:5px;/*cellspacing:poor IE support for  this*/
+       /* border-collapse:separate;*/
+    }
+
+    .divRow
+    {
+       display:table-row;
+       width:auto;
+    }
+
+    .divCell
+    {
+        float:left;/*fix for  buggy browsers*/
+        display:table-column;
+        width:90px;
+        color: #454647;
+      font-weight: bold;
+      line-height: 20px;
+        
+    }
+    .headRow .divCell{ color: #8b8888; 
+        font-size: 15px;
+        font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<p>
+
+
+    <div class="profile-card">
+        <img class="circular--square" src="img/profl.jpg" />
+        <h2>John Doe</h2>
+        <p>Web Developer</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+        <div class="contact-info">
+
+            <div class="divTable">
+                <div class="headRow">
+                    <div class="divCell" align="center">Projects</div>
+                    <div class="divCell">Following</div>
+                    <div class="divCell">Followers</div>
+                </div>
+                <div class="divRow">
+                    <div class="divCell">18</div>
+                    <div class="divCell">645</div>
+                    <div class="divCell">852</div>
+                </div>
+                
+              
+            
+            </div>
+
+
+            <button class="button">Follow</button>
+            <button class="button">Hire Me</button>            
+
+        </div>
+       
+    </div>
+
+    <div class="contine">
+ <h1>Minimal profile Card</h1>
+ <h5>HTML & CSS</h5>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
